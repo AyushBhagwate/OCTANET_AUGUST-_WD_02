@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+     font-family: Poppins;
+}
+
+.todo_app{
+    height: 100vh;
+    width: 100%;
+    background-color: #e9ab00;
+    background-image: linear-gradient(160deg, #ff3d0d 0%, #6b3bc5 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_container{
+    
+    width: 35rem;
+    background-color: white;
+   border-radius: 0.8rem;
+}
+.heading{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.heading h2{
+    color: #ff3d0d;
+    margin-top: 1.4rem;
+    margin-left: 1.8rem;
+    font-weight:550;
+}
+.heading i{
+    color: #ff3d0d;
+    margin-top: 1.4rem;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;   
+}
+.text_bar{
+    display: flex;
+    align-items: center;
+   
+    background-color:#edeef0;
+    border-radius: 1.7rem;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    
+}
+#txt_box{
+    flex: 1;
+    border: none;
+    outline: 0;
+    font-size: 0.9rem;
+    font-weight: 450;
+    background: transparent;
+    padding: 1rem;
+
+}
+.text_bar button{
+    background-color: #ff3d0d;
+    font-weight: 500;
+    color: white;
+    border: none;
+    border-radius: 1.7rem;
+    font-size: 1rem;
+    width: 6rem;
+    height: 3.3rem;    
+}
+#list_box{
+    margin-left: 6.6rem;
+}
+ul li{
+    position: relative;
+    list-style: none;
+    font-size: 1.1rem;
+    padding-bottom: 1.2rem;
+    user-select: none;
+    cursor: pointer;
+    
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background-image: url("1img.jpg");
+    background-size: cover;
+    background-position: center;
+    top: 0.1rem;
+    left: -2.8rem;
+   
+}
+
+ul li.selected{
+    color: #555;
+    text-decoration: line-through;   
+}
+ul li.selected::before{
+    background-image: url("2img.jpg");
+}
+
+span{
+    position: absolute;
+    width: 3.8rem;
+    height: 3.8rem;
+    right: 0;
+    top: -1rem;
+    font-size: 1.5rem;
+    color: #555;
+    text-align: center;
+    line-height: 3.8rem;
+}
+span:hover{
+font-size: 1.9rem;
+color: #ff3d0d;
+}
+
+
+.edit-btn {
+    background-color: #ff3d0d;
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 0.8rem;
+    width: 4rem;
+    height: 2rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background-color: #e44b0b;
+}
+
